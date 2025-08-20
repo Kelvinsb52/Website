@@ -3,32 +3,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Sneaker Hub App",
+    description: "A unified app for young ambitious entrepreneurs to manage their business.",
+    image: "#",
+    tags: ["React", "TailwindCSS", "Next.js", "LangChain"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Kelvinsb52/SneakerHub",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Latin Learning App",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Implementing LachChaing web app to help students learn Latin more effectively using AI.",
+    image: "#",
+    tags: ["TypeScript", "Python", "LangChain"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Kelvinsb52/Latin-Helper",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Convolutional Neural Network",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "Showed the math behind CNN's and build one from scratch using NumPy only.",
+    tags: ["Numpy", "Python", "Jupyter Notebook"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Kelvinsb52/Convolutional-NN",
   },
 ];
 
@@ -100,7 +99,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Kelvinsb52"
           >
             Check My Github <ArrowRight size={16} />
           </a>

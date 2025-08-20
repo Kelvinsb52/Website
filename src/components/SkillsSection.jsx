@@ -14,14 +14,21 @@ const skills = [
   { name: "Node.js", level: 80, category: "backend" },
   { name: "Express", level: 75, category: "backend" },
   { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
-
+  { name: "Python", level: 80, category: "backend" },
+  { name: "Django", level: 70, category: "backend" },
   // Tools
   { name: "Git/GitHub", level: 90, category: "tools" },
   { name: "Docker", level: 70, category: "tools" },
   { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+
+  // Other
+  { name: "Pytorch", level: 95, category: "machine learning" },
+  { name: "NumPy", level: 90, category: "machine learning" },
+  { name: "Pandas", level: 85, category: "machine learning" },
+  { name: "Scikit-learn", level: 80, category: "machine learning" },
+  { name: "Keras", level: 70, category: "machine learning" },
+  { name: "LangChain", level: 80, category: "machine learning" },
+
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
