@@ -1,13 +1,15 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#hero" },
+  { name: "About", href: "/#about" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const Navbar = () => {
@@ -30,26 +32,25 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a
+        <Link
           className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
+          to="/#hero"
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground"> Kelvin's </span>{" "}
             Portfolio
           </span>
-        </a>
-
+        </Link>
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
+            <Link
               key={key}
-              href={item.href}
+              to={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -74,14 +75,14 @@ export const Navbar = () => {
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
-              <a
+              <Link
                 key={key}
-                href={item.href}
+                to={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

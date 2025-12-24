@@ -24,11 +24,15 @@ export const HeroSection = () => {
             I build full-stack web applications with a focus on clean design and reliable functionality. 
             My work combines strong foundations in computer science, mathematics, and machine learning.
           </p>
+          <p className="font-extrabold">Feel free to check out my blog to read about my latest projects and insights.</p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+          <div className="flex justify-center pt-4 opacity-0 animate-fade-in-delay-4 gap-4">
+            <a href="/blog" className="cosmic-button">
+              Read My Blog
+            </a>
             <a href="#projects" className="cosmic-button">
               View My Work
-            </a>
+            </a>      
           </div>
         </div>
       </div>
