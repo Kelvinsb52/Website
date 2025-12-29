@@ -4,15 +4,15 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+      className="relative h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-6">
             <img
               src="/image0.jpeg"
               alt="Kelvin Solorzano"
-              className="w-80 h-80 rounded-full border-2 border-primary/50 shadow-lg object-cover opacity-0 animate-fade-in"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-primary/50 shadow-lg object-cover opacity-0 animate-fade-in"
             />
           </div>
 
@@ -45,7 +45,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce z-10">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>
